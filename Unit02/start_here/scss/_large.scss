@@ -1,0 +1,41 @@
+nav ul,
+header,
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#hero {
+    max-width: 1200px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 98%;
+
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+header {
+    padding-left: .5rem;
+}
+
+nav ul {
+    padding-left: 0%;
+}
+
+nav li {
+    width: auto;
+}
+
+nav a {
+    padding: .5rem 1rem;
+}
+
+main figure {
+    width: 31%;
+}
+
+div.news {
+    column-count: 1;
+}

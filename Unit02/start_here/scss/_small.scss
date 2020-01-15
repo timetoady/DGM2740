@@ -1,0 +1,136 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+}
+
+header {
+    background-color: $primaryColor;
+    padding: 1rem $gutter;
+    display: flex;
+    align-items: flex-end;
+}
+
+header figure {
+    margin: 0;
+    margin-right: 5px;
+}
+
+header img {
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    display: none;
+}
+
+nav {
+    background-color: #111;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+}
+
+nav li {
+    list-style-type: none;
+    width: 50%;
+
+}
+
+nav li.active {
+    background-color: #333
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    /*44px min*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+#hero {
+    background-image: url("/start_here/images/1.jpg");
+    text-align: center;
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main {
+    display: block;
+    padding: 1rem $gutter;
+}
+
+
+
+#hero h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 3rem;
+    padding-top: 8rem;
+    padding-bottom: .6rem;
+
+}
+
+main h1 {
+    color: $primaryColor;
+}
+
+main figure img {
+    width: 100%;
+}
+
+main figure {
+    margin: 0;
+    width: 100%;
+
+}
+
+main figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+
+footer {
+    background-color: $primaryColor;
+    text-align: center;
+    padding: 1rem $gutter;
+}
